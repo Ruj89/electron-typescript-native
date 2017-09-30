@@ -1,0 +1,25 @@
+{
+  "name": "electron-native-typescript",
+  "version": "1.0.0",
+  "description": "A minimal Electron application with a typescript native sample module",
+  "author": "Ruj89",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/electron-rebuild",
+    "build": "webpack",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "native_module": "file:../native_module"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.31",
+    "electron": "~1.6.2",
+    "electron-rebuild": "^1.6.0",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
+  }
+}
