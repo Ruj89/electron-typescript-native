@@ -1,17 +1,19 @@
 module.exports = {
-    target: "electron",
+    target: "electron-main",
+    mode: "development",
+    devtool: "inline-source-map",
     entry: "./src/renderer.ts",
     output: {
-        filename: "dist/bundle.js"
+        filename: "bundle.js"
     },
     resolve: {
-        // Add '.ts' and '.tsx' as a resolvable extension.
-        extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        // Add `.ts` and `.tsx` as a resolvable extension.
+        extensions: [".ts", ".tsx", ".js"]
     },
     module: {
-        loaders: [
-            // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
+        rules: [
+            // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
             { test: /\.tsx?$/, loader: "ts-loader" }
         ]
     }
-}
+};

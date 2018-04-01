@@ -17,7 +17,7 @@
     "nan": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.31",
+    "@types/node": "^9.6.1",
     "node-gyp": "^3.6.2",
     "typescript": "^2.5.3"
   }

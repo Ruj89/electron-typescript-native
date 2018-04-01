@@ -1,14 +1,14 @@
 A native Electron module using Typescript
 =========================================
 ### Summary
-* [Install and run](#install)
+* [Install and run on Windows](#install)
 * [Documentation](#documentation)
     * [`electron_sample` application](#electron_sample)
     * [`native_module` module](#native_module)
     
 
-<a name="install"></a> Install and run
---------------------------------------
+<a name="install"></a> Install and run on Windows
+-------------------------------------------------
 Install NodeJS.
 
 From an elevated PowerShell or CMD.exe (run as Administrator), run
@@ -17,14 +17,14 @@ $ npm install --global --production windows-build-tools
 ```
 to install Python and Visual C++ Build Environment.
 
-After that, in the project folder launch
+After that, enter in the project folder and launch
 ``` bash
 $ cd native_module && npm install && npm run build
 $ cd .. && cd electron_sample && npm install && npm run build
 $ npm run start
 ```
 
-After the `start` task, the native string `world` will appear inside the DOM.
+After the `start` task, the native string `world` will appear inside the DOM of an Electron window.
 
 <a name="documentation"></a> Documentation
 ------------------------------------------
