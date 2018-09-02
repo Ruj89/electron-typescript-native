@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^9.6.1",
-    "electron": "~1.8.4",
+    "electron": "~1.8.8",
     "electron-rebuild": "^1.6.0",
     "ts-loader": "^4.1.0",
     "typescript": "^2.5.3",
