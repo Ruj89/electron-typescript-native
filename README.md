@@ -83,12 +83,12 @@ In order to develop using a native library, we need `nan` and `node-gyp`. `@type
 compile Typescript.
 ``` 
 "dependencies": {
-    "nan": "^2.0.0"
+    "nan": "^2.14.0"
 },
 "devDependencies": {
-    "@types/node": "^9.6.1",
-    "node-gyp": "^3.6.2",
-    "typescript": "^2.5.3"
+    "@types/node": "^12.0.0",
+    "node-gyp": "^4.0.0",
+    "typescript": "^3.4.5"
 }
 ``` 
 

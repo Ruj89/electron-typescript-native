@@ -1,5 +1,5 @@
 module.exports = {
-    target: "electron-main",
+    target: "electron-renderer",
     mode: "development",
     devtool: "inline-source-map",
     entry: "./src/renderer.ts",
