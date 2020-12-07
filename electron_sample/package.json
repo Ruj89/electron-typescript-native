@@ -7,7 +7,7 @@
   "private": true,
   "main": "dist/main.js",
   "scripts": {
-    "postinstall": "./node_modules/.bin/electron-rebuild",
+    "postinstall": "electron-rebuild",
     "build": "webpack",
     "start": "electron ."
   },
