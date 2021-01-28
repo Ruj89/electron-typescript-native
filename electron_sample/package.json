@@ -15,7 +15,7 @@
     "native_module": "file:../native_module"
   },
   "devDependencies": {
-    "electron": "~11.0.3",
+    "electron": "~11.1.0",
     "electron-rebuild": "^2.3.4",
     "tar": "^6.0.5",
     "ts-loader": "^8.0.11",
