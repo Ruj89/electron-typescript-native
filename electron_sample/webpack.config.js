@@ -1,19 +1,23 @@
-module.exports = {
+const path = require("path");
+
+module.exports = [
+  {
     target: "electron-renderer",
     mode: "development",
     devtool: "inline-source-map",
-    entry: "./src/renderer.ts",
+    entry: "./src/renderer/renderer.ts",
     output: {
-        filename: "bundle.js"
-    },
-    resolve: {
-        // Add `.ts` and `.tsx` as a resolvable extension.
-        extensions: [".ts", ".tsx", ".js"]
+      filename: "renderer.js",
     },
     module: {
-        rules: [
-            // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-            { test: /\.tsx?$/, loader: "ts-loader" }
-        ]
-    }
-};
+      rules: [
+        // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+        {
+          loader: "ts-loader",
+          test: /\.tsx?$/,
+          include: [path.resolve(__dirname, "src/renderer")],
+        },
+      ],
+    },
+  },
+];

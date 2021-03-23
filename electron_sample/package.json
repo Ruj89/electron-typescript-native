@@ -5,22 +5,23 @@
   "author": "Ruj89",
   "license": "MIT",
   "private": true,
-  "main": "dist/main.js",
   "scripts": {
     "postinstall": "electron-rebuild",
-    "build": "webpack",
-    "start": "electron ."
+    "build-electron": "tsc",
+    "build-renderer": "webpack",
+    "build": "npm run build-electron && npm run build-renderer",
+    "start": "electron ./dist/main.js"
   },
   "dependencies": {
     "native_module": "file:../native_module"
   },
   "devDependencies": {
-    "electron": "~11.0.3",
-    "electron-rebuild": "^2.3.4",
-    "tar": "^6.0.5",
-    "ts-loader": "^8.0.11",
-    "typescript": "^4.1.2",
-    "webpack": "^5.10.0",
-    "webpack-cli": "^4.2.0"
+    "electron": "^12.0.1",
+    "electron-rebuild": "^2.3.5",
+    "tar": "^6.1.0",
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
   }
 }

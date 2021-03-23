@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "removeComments": true
-  }
+    "removeComments": true,
+    "outDir": "dist",
+    "baseUrl": "."
+  },
+  "include": ["src/electron/**/*"]
 }
