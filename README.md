@@ -9,17 +9,9 @@
 
 ## Install and run on Windows
 
-Install NodeJS.
+Install NodeJS, Microsoft Visual Studio Build Tools 17 and Python 2.7.
 
-From an elevated PowerShell or CMD.exe (run as Administrator), run
-
-```cmd
-npm install --global --production windows-build-tools
-```
-
-to install Python and Visual C++ Build Environment.
-
-After that, launch CMD.exe as a user, enter in the project folder and launch
+After that, launch CMD.exe, enter in the project folder and launch
 
 ```cmd
 cd native_module && npm install && npm run build
@@ -97,12 +89,12 @@ compile Typescript.
 
 ```json
 "dependencies": {
-    "nan": "^2.14.0"
+    "nan": "^2.14.2"
 },
 "devDependencies": {
-    "@types/node": "^12.0.0",
-    "node-gyp": "^4.0.0",
-    "typescript": "^3.4.5"
+    "@types/node": "^14.14.35",
+    "node-gyp": "^7.1.2",
+    "typescript": "^4.2.3"
 }
 ```
 
