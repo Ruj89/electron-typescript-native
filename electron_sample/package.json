@@ -6,10 +6,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "postinstall": "electron-rebuild",
+    "build-module": "electron-rebuild",
     "build-electron": "tsc",
     "build-renderer": "webpack",
-    "build": "npm run build-electron && npm run build-renderer",
+    "build": "npm run build-module && npm run build-electron && npm run build-renderer",
     "start": "electron ./dist/main.js"
   },
   "dependencies": {

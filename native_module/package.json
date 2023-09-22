@@ -9,8 +9,7 @@
   "types": "dist/index.d.ts",
   "gypfile": true,
   "scripts": {
-    "build": "npm run build-native && npm run tsc",
-    "tsc": "tsc",
+    "build": "tsc",
     "build-native": "node-gyp rebuild"
   },
   "devDependencies": {
