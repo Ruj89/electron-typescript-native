@@ -75,35 +75,21 @@ indicates the correct path for the main file and typing declarations.
 The scripts used in this module are
 
 ```json
-"build": "npm run build-native && npm run tsc",
-"tsc": "tsc",
+"build": "tsc",
 "build-native": "node-gyp rebuild"
 ```
 
-- `tsc`: compiles the Typescript source code.
 - `build-native`: compiles the C++ code.
-- `build`: executes both.
+- `build`: compiles the ts code.
 
-In order to develop using a native library, we need `nan` and `node-gyp`. `@types/node` and `typescript` are useful to
-compile Typescript.
+In order to develop using a native library, we need `node-gyp`. `@types/node` and `typescript` are useful to compile Typescript.
 
 ```json
-"dependencies": {
-    "nan": "^2.14.2"
-},
 "devDependencies": {
-    "@types/node": "^14.14.35",
-    "node-gyp": "^7.1.2",
-    "typescript": "^4.2.3"
+    "@types/node": "^20.6.3",
+    "node-gyp": "^9.4.0",
+    "typescript": "^5.2.2"
 }
-```
-
-In `binding.gyp` we include `nan` binaries
-
-```json
-"include_dirs": [
-    "<!(node -e \"require('nan')\")"
-]
 ```
 
 In Typescript `index.ts` is wrapped the exported `hello` function used in the Electron application.
