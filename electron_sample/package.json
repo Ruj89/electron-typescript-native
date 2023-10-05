@@ -16,7 +16,7 @@
     "native_module": "file:../native_module"
   },
   "devDependencies": {
-    "electron": "^26.2.2",
+    "electron": "^26.2.4",
     "electron-rebuild": "^3.2.3",
     "ts-loader": "^9.2.5",
     "typescript": "^5.2.2",
